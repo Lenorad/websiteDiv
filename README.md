@@ -1,0 +1,4 @@
+git init
+git remote (copy)
+git commit -m "commit name"
+git add .

@@ -7,6 +7,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="srcs/all.min.css">
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="srcs/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -50,7 +53,74 @@
 
     <!-- main start  -->
     <main>
-        <h1 class="page__title">This is home page.</h1>
+        <h1 class="page__title">message in a bottle...</h1>
+        <div class="swiper mySwiper mySlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider__image">
+                        <img src="img/watch(1).png" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__data">
+                        <h3 class="slider__title">Watch 1</h3>
+                        <p class="slider__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, repellat.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__image">
+                        <img src="img/watch(2).png" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__data">
+                        <h3 class="slider__title">Watch 2</h3>
+                        <p class="slider__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, repellat.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__image">
+                        <img src="img/watch(3).png" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__data">
+                        <h3 class="slider__title">Watch 3</h3>
+                        <p class="slider__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, repellat.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__image">
+                        <img src="img/watch(4).png" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__data">
+                        <h3 class="slider__title">Watch 4</h3>
+                        <p class="slider__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, repellat.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__image">
+                        <img src="img/watch(5).png" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__data">
+                        <h3 class="slider__title">Watch 5</h3>
+                        <p class="slider__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, repellat.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__image">
+                        <img src="img/watch(6).png" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__data">
+                        <h3 class="slider__title">Watch 6</h3>
+                        <p class="slider__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas, repellat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </main>
     <!-- main end  -->
 
@@ -130,6 +200,42 @@
 
     </footer>
     <!-- footer end  -->
+    <script src="srcs/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteration: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
 
 </body>
 

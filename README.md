@@ -1,4 +1,5 @@
 git init
 git remote (copy)
+git add . (optional)
 git commit -m "commit name"
-git add .
+git push -u origin master
